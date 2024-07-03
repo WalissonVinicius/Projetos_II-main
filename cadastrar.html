@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviços</title>
+    <link rel="stylesheet" href="cadastrar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de empresarial</h1>
+            <div class="form-group">
+                <label for="company-name">Nome da Empresa</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="company-email">Email da Empresa</label>
+                <input type="email" id="company-email" name="company-email" required>
+            </div>
+            <div class="form-group">
+                <label for="company-cnpj">CNPJ da Empresa</label>
+                <input type="text" id="company-cnpj" name="company-cnpj" required>
+            </div>
+            <div class="form-group">
+                <label for="company-address">Endereço da Empresa</label>
+                <input type="text" id="company-address" name="company-address" required>
+            </div>
+            <div class="form-group">
+                <label for="service-description">Descrição do Serviço</label>
+                <textarea id="service-description" name="service-description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="service-price">Preço do Serviço</label>
+                <input type="number" id="service-price" name="service-price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="company-logo">Logo da Empresa</label>
+                <input type="file" id="company-logo" name="company-logo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <button onclick="window.location.href='sucess.html'">Cadastrar Serviço</button>
+            </div>
+    </div>
+</body>
+</html>
